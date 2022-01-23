@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import{BrowserRouter as Router , Routes , Route } from 'react-router-dom' ;
+import Login from './Screens/Login/Login';
+import Dashboard from './Screens/Dashboard/Dashboard';
+import Register from './Screens/Register/Register';
+import LDashboard from './Screens/Loggedin_mp/LDashboard';
+import MPC_DB from './Screens/Dashboard/MPC_DB';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+          <Route path='/' element={<MPC_DB />}/>
+          <Route path='/Login' element={<Login/>} />
+          <Route path='/Register' element={<Register/>}/> 
+          <Route path='/LDashboard' element={<LDashboard/>}/> 
+
+      </Routes>
+      
+    </Router>
   );
 }
 

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.dashboard{
+    margin: 0 5%;
+}
+.banner{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    background-color: #c3e7fd;
+    justify-content: flex-start;
+}
+.img-1{
+height: 150px;
+}
+.semi-circle{
+    height: 150px;
+    width: 100px;
+    border-radius:  0 150px  150px 0;
+    background-color: #d3b4f6;
+}
+.api-ad{
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+margin: auto 20px;
+}
+.api-ad-txt{
+font-size:50px;
+color: #1e272e;
+font-family: 'Bebas Neue', cursive;
+}
+.all-api-txt{
+    font-size: 24px;
+}
+.api-ad-info-txt{
+    color: #00346e;
+    /* color:#566474 ; */
+    font-size: 26px;
+    display: inline;
+}
+.view-app{
+    margin: auto 15px;
+    height: 40px;
+    width: 110px;
+    font-size: 16px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    background-color: #1e272e;
+}
+
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto 20px;
+}
+.login-sign-btn{
+font-size: 16px;
+margin-top: 10px;
+padding: 10px 32px;
+}
