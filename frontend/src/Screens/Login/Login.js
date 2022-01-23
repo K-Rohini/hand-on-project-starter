@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import "./Login.css";
 import group from "../../assets/group.png";
+
 import { useNavigate } from "react-router-dom";
+import {ThreeBounce} from "better-react-spinkit";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -87,7 +89,7 @@ const Login = () => {
                   type="submit"
                   className="button1"
                 >
-                  Login
+                 Login 
                 </button>
                 {/* </Link> */}
                 <Link to="/Register" style={{ textDecoration: "none" }}>

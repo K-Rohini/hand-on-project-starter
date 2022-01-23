@@ -2,7 +2,7 @@ import React from 'react'
 import './Card.css'
 import card from '../../assets/img1.png'
 const Card = (props) => {
-    var img = require('../../assets/img'+props.id+'.png');
+    var img = require('../../assets/img'+props.img_no+'.png');
     return (
           <div className='card'>
                 <img src={img} className="card-img"></img>

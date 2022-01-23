@@ -12,63 +12,77 @@ const Dashboard = () => {
         {
             heading:"Background Remover",
             desc:"The description of API in quick brief and we will truncate it here..",
-            id:"1"
+            img_no:"1",
+            id:1
         },
         {
             heading:"API Name",
             desc:"The description of API in quick brief and we will truncate it here..",
-            id:"2"
+            img_no:"2",
+            id:2
         },
         {
             heading:"API Name",
             desc:"The description of API in quick brief and we will truncate it here..",
-            id:"3"
+            img_no:"3",
+            id:3
         },
         {
             heading:"API Name",
             desc:"The description of API in quick brief and we will truncate it here..",
-            id:"1"
+            img_no:"1",
+            id:4
         },
         {
             heading:"API Name",
             desc:"The description of API in quick brief and we will truncate it here..",
-            id:"2"
+            img_no:"2",
+            id:5
         },
         {
             heading:"API Name",
             desc:"The description of API in quick brief and we will truncate it here..",
-            id:"3"
+            img_no:"3",
+            id:6
         },
         {
             heading:"API Name",
             desc:"The description of API in quick brief and we will truncate it here..",
-            id:"1"
+            img_no:"1",
+            id:7
+
         },
         {
             heading:"API Name",
             desc:"The description of API in quick brief and we will truncate it here..",
-            id:"2"
+            img_no:"2",
+            id:8
+
         },
         {
             heading:"API Name",
             desc:"The description of API in quick brief and we will truncate it here..",
-            id:"3"
+            img_no:"3",
+            id:9
         },
 
         {
             heading:"API Name",
             desc:"The description of API in quick brief and we will truncate it here..",
-            id:"1"
+            img_no:"1",
+            id:10
         },
         {
             heading:"API Name",
             desc:"The description of API in quick brief and we will truncate it here..",
-            id:"2"
+            img_no:"2",
+            id:11
         },
         {
             heading:"API Name",
             desc:"The description of API in quick brief and we will truncate it here..",
-            id:"3"
+            img_no:"3",
+            id:12
         },
     ]
     return (
@@ -89,7 +103,7 @@ const Dashboard = () => {
 
        {apis.map((e)=>{
            return(
-               <Card id={e.id} heading={e.heading} desc={e.desc}/>
+               <Card img_no={e.img_no} heading={e.heading} desc={e.desc}/>
            );
        })}
        

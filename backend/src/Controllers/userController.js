@@ -25,6 +25,7 @@ const registerUser = asyncHandler(async(req,res) =>{
             email:user.email,
             token:generateToken(user._id),
         });
+       
     } else {
         res.status(400);
         throw new Error("Error Occured");
@@ -42,8 +43,9 @@ const authUser = asyncHandler(async(req,res) =>{
             username:user.username,
             email:user.email,
             token:generateToken(user._id),
-             
+        
         });
+        console.log("Login successful")
     }else {
         res.status(400);
         throw new Error("Invalid Email or Password  ! ");
