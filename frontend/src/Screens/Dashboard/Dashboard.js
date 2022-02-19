@@ -95,7 +95,9 @@ const Dashboard = () => {
             <div className="api-ad-txt">BACKGROUND IMAGE REMOVE</div>
             <div className="api-ad-info-txt">100% automatic and free</div>
             </div>
+            <Link to='/PopUp'>
             <button className="view-app">View App</button>
+            </Link>
             </div>
         </div>
         <p className="all-api-txt">All APIs</p>
