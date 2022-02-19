@@ -13,11 +13,10 @@ function App() {
   return (
     <Router>
       <Routes>
-          <Route path='/' element={<Dashboard/>}/>
+          <Route path='/' element={<MPC_DB/>}/>
           <Route path='/Login' element={<Login/>} />
           <Route path='/Register' element={<Register/>}/> 
           <Route path='/LDashboard' element={<LDashboard/>}/> 
-
       </Routes>
       
     </Router>
