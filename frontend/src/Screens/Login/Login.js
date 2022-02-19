@@ -6,7 +6,7 @@ import "./Login.css";
 import group from "../../assets/group.png";
 
 import { useNavigate } from "react-router-dom";
-import {ThreeBounce} from "better-react-spinkit";
+//import { ThreeBounce } from "better-react-spinkit";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -15,8 +15,16 @@ const Login = () => {
   let navigate = useNavigate();
 
   const submitHandler = async (e) => {
+    if ((email || password) === null) {
+      alert("Fill the Details");
+    } else {
+      alert("logged in");
+      navigate("../LDashboard", { replace: true });
+     
+    }
+
     e.preventDefault();
-    navigate("../LDashboard", { replace: true });
+
     try {
       const config = {
         headers: {
@@ -69,7 +77,7 @@ const Login = () => {
           <div className="form">
             <form onSubmit={submitHandler}>
               <input
-                type="text"
+                type="email"
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -89,7 +97,7 @@ const Login = () => {
                   type="submit"
                   className="button1"
                 >
-                 Login 
+                  Login
                 </button>
                 {/* </Link> */}
                 <Link to="/Register" style={{ textDecoration: "none" }}>

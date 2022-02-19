@@ -5,7 +5,7 @@ body {
 
 .card {
   margin:2%;
-  display: inline-block;
+  display:inline-block;
   width: 20%;
   box-shadow: 5px 5px 10px 2px rgb(179, 179, 179,0.8);
   border-radius: 10px;

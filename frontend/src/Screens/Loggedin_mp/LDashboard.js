@@ -5,7 +5,7 @@ import Navbar from "../../components/Navbar/Navbar"
 const LDashboard = () => {
     return (
         <>
-<Navbar></Navbar>
+        <Navbar></Navbar>
         <Dashboard ></Dashboard>
         </>
     );

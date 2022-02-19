@@ -16,8 +16,14 @@ const Register = () => {
   const navigate = useNavigate();
 
   const submitHandler = async (e) => {
-    e.preventDefault();
-    navigate("../LDashboard", { replace: true });
+    if((username || email || password)===null){
+      alert("Registered Successfully");
+      e.preventDefault();
+      navigate("../LDashboard", { replace: true });  
+    }else {
+      alert("Complete Your Details");
+    }
+    
 
     try {
       const config = {
@@ -91,7 +97,7 @@ const Register = () => {
                 onChange={(e) => setUsername(e.target.value)}
               />
               <input
-                type="text"
+                type="email"
                 value={email}
                 placeholder="New email Address"
                 onChange={(e) => setEmail(e.target.value)}

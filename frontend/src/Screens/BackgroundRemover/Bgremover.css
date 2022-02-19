@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+html,body{
+    font-family: 'Noto Sans', sans-serif;
+}
+.Container{
+    display: flex;
+}
+.Logo{
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+.block1{
+    height: 90vh;
+    width: 50%;
+    background: rgba(247, 248, 250, 0.5);
+}
+.Header{
+    margin-top: 10%;
+    margin-left: 20%;
+    width: 50%;
+    font-size: 48px;
+    font-weight: bolder;
+}
+.Content{
+    margin-left: 20%;
+    font-size: 28px;
+    color: #566474;
+}
+.Image{
+    margin-left: 20%;
+    margin-top: 2%;
+    width: 50%;
+}
+
+.block2{
+   width: 30%;
+   border-radius: 5px;
+   border: 1px solid lightgray;
+   height: 60vh;
+   margin-left: 10%;
+   margin-top: 10%;
+   box-shadow: 5px 5px 10px 2px rgb(179, 179, 179,0.8);
+   
+}
+
+.circle{
+    display: flex;
+    flex-direction: column;
+    background: #F4F4F4;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-left: 22%;
+    margin-top: 10%;
+}
+
+.icon{
+   
+    display: flex;
+    flex-direction: column;
+    margin-left:20%; 
+    margin-top: 18%;
+    height: 150px;
+    width: 150px;
+}
+.img{
+    height: 150px;
+    width: 150px;
+   object-fit: cover;
+}
+.Button{
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+.Uploadbtn{
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #142683;
+    border: 2px solid;
+    border-color: #142683;
+    color: white;
+    padding: 6px 32px;
+}
+
+.Sendbtn{
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #142683;
+    border: 2px solid;
+    border-color: #142683;
+    color: white;
+    padding: 6px 32px;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.primary-content{
+    margin-top: 3%;
+    margin-left: 27%;
+    width:50%;
+    color: #566474;
+}
+.secondary-content{
+    margin-top: 2%;
+    margin-left: 40%;
+    color: #566474;
+}
+
+#input[type="file"]{
+    display: none;
+}
+

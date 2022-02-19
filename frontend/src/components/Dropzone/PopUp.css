@@ -1,0 +1,38 @@
+.popup_box{
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    height: 90vh;
+     margin: 10% auto;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+    box-shadow: 5px 5px 10px 2px rgb(179, 179, 179,0.8);
+}
+
+.img-box{
+    border: 1px solid lightgray;
+    width: 50%;
+    height: 70vh;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.Bgimg img{    
+/* max-height: 300px;
+max-width: 300px; 
+margin: auto;
+object-fit: cover; */
+     max-width: 100%;
+    width: 100%;
+    height: auto !important;
+}
+
+.Buttons{
+     margin: auto;
+     
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
