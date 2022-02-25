@@ -1,6 +1,6 @@
 import React from 'react'
 import Dashboard from './Dashboard'
-import Navbar from "../../components/Navbar/Navbar";
+//import Navbar from "../../components/Navbar/Navbar";
 import logo from "../../assets/logo.png";
 import {Link} from "react-router-dom";
 
