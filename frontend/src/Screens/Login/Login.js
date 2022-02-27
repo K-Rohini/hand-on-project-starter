@@ -9,21 +9,27 @@ import { useNavigate } from "react-router-dom";
 //import { ThreeBounce } from "better-react-spinkit";
 const Login = () => {
   const [email, setEmail] = useState("");
+  //const [emailIsValid, setEmailIsValid] = useState();
   const [password, setPassword] = useState("");
+  //const [passwordIsValid, setPasswordIsValid] = useState();
+  //const [formIsValid, setFormIsValid] = useState(false);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
   let navigate = useNavigate();
 
   const submitHandler = async (e) => {
-    if ((email || password) === null) {
-      alert("Fill the Details");
-    } else {
-      alert("logged in");
-      navigate("../LDashboard", { replace: true });
-     
-    }
+//     const login = (e) => {
+//       e.preventDefault();
+// };
+    // if ((setEmail || setPassword) === null) {
+    //   alert("Fill the Details");
+    //   e.preventDefault();  
+    // } else {
+    //   navigate("../LDashboard", { replace: true });
+    // }
+    navigate("../LDashboard", { replace: true });
 
-    e.preventDefault();
+   
 
     try {
       const config = {
@@ -48,9 +54,7 @@ const Login = () => {
     }
   };
 
-  // const login = (e) => {
-  //       e.preventDefault();
-  // };
+  
 
   // const Signup = (e) => {
   //     e.preventDefault();

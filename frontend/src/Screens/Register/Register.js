@@ -16,14 +16,14 @@ const Register = () => {
   const navigate = useNavigate();
 
   const submitHandler = async (e) => {
-    if((username || email || password)===null){
-      alert("Registered Successfully");
-      e.preventDefault();
-      navigate("../LDashboard", { replace: true });  
-    }else {
-      alert("Complete Your Details");
-    }
-    
+    // if((username || email || password)===null){
+    //   alert("Registered Successfully");
+    //   e.preventDefault();
+    //   navigate("../LDashboard", { replace: true });  
+    // }else {
+    //   alert("Complete Your Details");
+    // }
+    navigate("../LDashboard", { replace: true });
 
     try {
       const config = {
